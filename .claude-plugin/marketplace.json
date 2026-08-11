@@ -1,0 +1,61 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "sehosun",
+  "owner": {
+    "name": "Seho Sun",
+    "email": "camplab2@gmail.com",
+    "url": "https://github.com/SHSUN76"
+  },
+  "description": "Claude Code plugins by Seho Sun (CAMP Lab, Yeungnam University) - academic paper automation, computational chemistry, and remote-machine setup. Add with `/plugin marketplace add SHSUN76/sehosun` (a git source); do not add by raw URL to this file. Entries marked PRIVATE REPO resolve only for GitHub accounts with read access.",
+  "plugins": [
+    {
+      "name": "compchem",
+      "source": {"source": "github", "repo": "SHSUN76/compchem-claude-plugin"},
+      "displayName": "Computational Chemistry Workflow",
+      "description": "PRIVATE REPO (CAMP Lab members only). DFT / MD / MLIP workflow router for Quantum ESPRESSO, LAMMPS, OpenMM, MACE and CHGNet. Socratic calculation planner, SSSP-backed input validator, 7-MUST safe restart protocol, relaxation-optimizer advisor, project tracker, POV-Ray multiview vision check, and 5-pass SOP verification.",
+      "author": {"name": "Seho Sun", "email": "camplab2@gmail.com", "url": "https://github.com/SHSUN76"},
+      "homepage": "https://github.com/SHSUN76/compchem-claude-plugin",
+      "repository": "https://github.com/SHSUN76/compchem-claude-plugin",
+      "license": "MIT",
+      "category": "science",
+      "keywords": ["computational-chemistry","dft","quantum-espresso","molecular-dynamics","mace","chgnet","neb","materials-science","battery","hpc"]
+    },
+    {
+      "name": "paper-autopilot",
+      "source": {"source": "github", "repo": "SHSUN76/paper-autopilot"},
+      "displayName": "Paper Autopilot (MoE edition)",
+      "description": "PRIVATE REPO (CAMP Lab members only). MUTUALLY EXCLUSIVE with paper-autopilot-open - the two editions share 9 skill names, ~32 agent names and the /paper-autopilot command tree, so install only one. Multi-corpus (MoE) edition of the academic paper pipeline: folder scaffold, G1/G2 forcing-question gates, experimental SOP design, figure mockup evolution, corpus-routed drafting, and an adversarial spec-review loop.",
+      "author": {"name": "Seho Sun", "email": "camplab2@gmail.com", "url": "https://github.com/SHSUN76"},
+      "homepage": "https://github.com/SHSUN76/paper-autopilot",
+      "repository": "https://github.com/SHSUN76/paper-autopilot",
+      "license": "MIT",
+      "category": "research",
+      "keywords": ["academic-writing","paper","manuscript","rag","moe","corpus","materials-science","battery"]
+    },
+    {
+      "name": "paper-autopilot-open",
+      "source": {"source": "github", "repo": "SHSUN76/paper-autopilot-open"},
+      "displayName": "Paper Autopilot (open edition)",
+      "defaultEnabled": false,
+      "description": "MUTUALLY EXCLUSIVE with paper-autopilot (MoE edition) - installs disabled by default for that reason; enable it only if the MoE edition is not installed. Public standalone edition of the academic paper pipeline: folder scaffold, forcing-question gates, experimental SOP design, figure mockup evolution, corpus-grounded drafting, six-axis referee review, and docx export. Ships a guided onboarding skill plus dual local/Supabase RAG.",
+      "author": {"name": "Seho Sun", "email": "camplab2@gmail.com", "url": "https://github.com/SHSUN76"},
+      "homepage": "https://github.com/SHSUN76/paper-autopilot-open",
+      "repository": "https://github.com/SHSUN76/paper-autopilot-open",
+      "license": "MIT",
+      "category": "research",
+      "keywords": ["academic-writing","paper","manuscript","rag","peer-review","docx","materials-science","battery"]
+    },
+    {
+      "name": "tailscale-ssh",
+      "source": {"source": "github", "repo": "SHSUN76/tailscale-ssh-skill"},
+      "displayName": "Tailscale SSH",
+      "description": "Establish SSH between two machines with no VPN, no port forwarding and no inbound firewall rule, by building a WireGuard tunnel over Tailscale and writing the ssh config block. Covers both roles (client and target), Windows OpenSSH Server setup, tag-based ACL isolation, and a troubleshooting catalogue.",
+      "author": {"name": "Seho Sun", "email": "camplab2@gmail.com", "url": "https://github.com/SHSUN76"},
+      "homepage": "https://github.com/SHSUN76/tailscale-ssh-skill",
+      "repository": "https://github.com/SHSUN76/tailscale-ssh-skill",
+      "license": "MIT",
+      "category": "devops",
+      "keywords": ["ssh","tailscale","wireguard","remote-access","firewall","workstation","port-forwarding"]
+    }
+  ]
+}
