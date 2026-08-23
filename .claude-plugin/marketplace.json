@@ -56,6 +56,18 @@
       "license": "MIT",
       "category": "devops",
       "keywords": ["ssh","tailscale","wireguard","remote-access","firewall","workstation","port-forwarding"]
+    },
+    {
+      "name": "vesta",
+      "source": {"source": "github", "repo": "SHSUN76/vesta-claude-plugin"},
+      "displayName": "VESTA Figure Automation",
+      "description": "Crystal-structure figure automation built on VESTA and POV-Ray. Infers the three style axes (representation model, colour palette, render path) from the request and asks only what it cannot infer, then runs the pipeline: ASE structure validation -> VESTA CLI scene generation with field-verified .vesta format knowledge -> pastel restyling -> optional POV-Ray raytraced PNG. Includes a one-click dependency setup skill that downloads portable VESTA and checks POV-Ray and Python packages.",
+      "author": {"name": "Seho Sun", "email": "camplab2@gmail.com", "url": "https://github.com/SHSUN76"},
+      "homepage": "https://github.com/SHSUN76/vesta-claude-plugin",
+      "repository": "https://github.com/SHSUN76/vesta-claude-plugin",
+      "license": "MIT",
+      "category": "science",
+      "keywords": ["vesta","crystal-structure","visualization","cif","pov-ray","materials-science","figure","battery"]
     }
   ]
 }
