@@ -130,6 +130,7 @@ diagram 안 모든 텍스트는 12 pt 이상이다. 캡션 10.5 pt와 footer 9 p
 
 * `sample_spec.json` — 24장 스펙. 9종 레이아웃 전부, diagram 4종 전부, 크롭, 표, callout, appendix를 한 번씩 쓴다
 * `forbidden_spec.json` — 위 스펙에 금칙어를 심은 것. 종료 코드 2 회귀 확인용
+* 두 스펙이 가리키는 figure 파일은 저자 작업 폴더의 것이라 배포판에 없다. 스펙은 스키마 예시로 읽고, 빌드를 돌려 볼 때는 `assets` 경로를 본인 그림으로 바꾼다
 * 플러그인 배포판에는 스펙 JSON 둘만 들어 있다. `sample.pptx`와 `render/slide_NN.png`은 용량(39 MB) 때문에 빠져 있으므로, 검수용 렌더가 필요하면 아래 명령으로 직접 만든다
 
 렌더 재생성:
