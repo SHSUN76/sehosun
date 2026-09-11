@@ -1,0 +1,49 @@
+# 전기화학 안정성 윈도우 — floating bar 아키타입 인수테스트
+# 러너: python scripts/_acceptance_esw.py
+#   -> tests/_acceptance/esw_window.png (width=1000) + esw_window.opju
+output: esw_window
+style: house
+
+graphs:
+  - id: esw
+    donor: floating_bar
+    data: tests/fixtures/esw_window.csv
+    x: molecule
+    y_low: e_red
+    y_high: e_ox
+
+    title: "Electrochemical stability window (DFT vertical ΔSCF)"
+    subtitle: "B3LYP-D3BJ / def2-TZVP / CPCM(MeCN)"
+    y_title: "potential vs Li+/Li (V)"
+    y_range: [-2, 7]
+
+    # 카테고리 축 라벨은 2줄
+    x_labels:
+      M1: "M1\n(beta-CD unit)"
+      M2: "M2\n(BCC crosslinked)"
+
+    # 계열별 색: 테두리는 진하게, 채움은 옅게
+    colors:
+      series:
+        M1: {line: "#2E5FA3", fill: "#BFD3EC"}
+        M2: {line: "#C0392B", fill: "#F2C6C2"}
+
+    # 막대 끝 라벨: 위=산화 한계, 아래=환원 한계
+    value_labels:
+      top:    {source: e_ox,  format: "Eox {v:.2f} V"}
+      bottom: {source: e_red, format: "Ered {v:.2f} V"}
+
+    # 가로 밴드 (양극 작동 구간)
+    bands:
+      - from: 3.0
+        to: 4.3
+        fill: "#F5D76E"
+        alpha: 0.35
+        label: "cathode\noperating\nwindow\n3.0-4.3 V"
+        label_side: right      # 플롯 바깥 오른쪽
+        label_color: "#B8860B"
+
+    annotation:
+      text: "crosslinking raises\noxidative limit\n(VIP 6.95->7.01 eV)"
+      at: top_center
+      color: "#333333"

@@ -1,0 +1,15 @@
+# /origin house style — 모든 그래프에 강제 적용되는 표준값
+# 실측 최빈값: 축제목 28 / 눈금라벨 24 / 두께 3  →  아래는 사용자 지정 표준
+axis_title_pt: 32
+tick_label_pt: 24
+axis_thickness: 4
+tick_direction: in
+tick_label_bold: true
+
+# layer.<axis>.ticks 비트마스크 (렌더 비교로 확정, 2026-07-28)
+#   bit0=major in, bit1=major out, bit2=minor in, bit3=minor out
+tick_bitmask:
+  none: 0
+  in: 5
+  out: 10
+  both: 15

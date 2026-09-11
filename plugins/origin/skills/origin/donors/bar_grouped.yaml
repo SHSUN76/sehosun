@@ -1,0 +1,32 @@
+archetype: bar_grouped
+curated_from: oleObject34.bin
+graph: Graph1
+graph_count: 1
+measured:
+  layer.x.thickness: 3.0
+  layer.y.thickness: 3.0
+  layer.x.label.pt: 24.0
+  layer.y.label.pt: 24.0
+  layer.x.label.bold: 1.0
+  layer.y.label.bold: 1.0
+  XB.fsize: null
+  YL.fsize: 22.0
+  YR.fsize: 18.0
+  layer.x.ticks: 1.0
+  layer.y.ticks: 1.0
+  layer.x.type: 1.0
+  layer.y.type: 1.0
+  layer.x.from: 0.5
+  layer.x.to: 3.5
+  layer.x.inc: 1.0
+  layer.y.from: 0.0
+  layer.y.to: 4.5
+  layer.y.inc: 1.0
+  page.nLayers: 1.0
+  page.width: 6774.0
+  page.height: 4720.0
+data_shape:
+  rows: 3
+  cols: 3
+  x_type: categorical
+  has_worksheet: true

@@ -1,0 +1,20 @@
+{
+  "name": "origin",
+  "version": "0.1.0",
+  "description": "csv/xlsx 데이터로 OriginLab(Origin 2021) 논문급 그래프를 만들고 PowerPoint에 편집 가능한 OLE 객체로 붙이는 워크플로. donor .opj 10종에서 스타일을 상속하고 house style(축제목 32pt / 눈금라벨 24pt 볼드 / 축두께 4)을 강제한다. Origin 2021 + originpro 필요.",
+  "author": {
+    "name": "Seho Sun",
+    "email": "camplab2@gmail.com",
+    "url": "https://github.com/SHSUN76"
+  },
+  "homepage": "https://github.com/SHSUN76/sehosun",
+  "repository": "https://github.com/SHSUN76/sehosun",
+  "license": "MIT",
+  "keywords": [
+    "originlab",
+    "originpro",
+    "figure",
+    "plotting",
+    "powerpoint"
+  ]
+}

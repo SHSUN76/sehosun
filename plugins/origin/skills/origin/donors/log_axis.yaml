@@ -1,0 +1,32 @@
+archetype: log_axis
+curated_from: oleObject5.bin
+graph: Graph2
+graph_count: 1
+measured:
+  layer.x.thickness: 3.0
+  layer.y.thickness: 3.0
+  layer.x.label.pt: 22.0
+  layer.y.label.pt: 22.0
+  layer.x.label.bold: 1.0
+  layer.y.label.bold: 1.0
+  XB.fsize: 28.0
+  YL.fsize: 28.0
+  YR.fsize: 22.0
+  layer.x.ticks: 10.0
+  layer.y.ticks: 10.0
+  layer.x.type: 2.0
+  layer.y.type: 1.0
+  layer.x.from: 0.01
+  layer.x.to: 1000000.0
+  layer.x.inc: 1.0
+  layer.y.from: -1.0
+  layer.y.to: 100.0
+  layer.y.inc: 20.0
+  page.nLayers: 1.0
+  page.width: 6780.0
+  page.height: 4724.0
+data_shape:
+  rows: 0
+  cols: 0
+  x_type: none
+  has_worksheet: false

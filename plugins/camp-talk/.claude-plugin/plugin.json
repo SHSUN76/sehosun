@@ -1,0 +1,20 @@
+{
+  "name": "camp-talk",
+  "version": "0.1.0",
+  "description": "논문·원고를 학회 구두발표 덱으로 만드는 3단 파이프라인 스킬 — 자산(그림) 원장 → 고정 그리드 pptxgenjs 빌더 → 자동 QA. 모델이 좌표를 잡지 않으므로 제목·띠·결론문 위치가 모든 슬라이드에서 같고, 그림은 비율을 유지한 채 배치된다.",
+  "author": {
+    "name": "Seho Sun",
+    "email": "camplab2@gmail.com",
+    "url": "https://github.com/SHSUN76"
+  },
+  "homepage": "https://github.com/SHSUN76/sehosun",
+  "repository": "https://github.com/SHSUN76/sehosun",
+  "license": "MIT",
+  "keywords": [
+    "presentation",
+    "pptx",
+    "conference-talk",
+    "academic",
+    "slides"
+  ]
+}

@@ -1,0 +1,484 @@
+{
+  "meta": {
+    "title": "소립을 선택적으로 결합시키는 사이클로덱스트린 공바인더",
+    "subtitle": "A cyclodextrin co-binder that binds fines selectively in dry-processed thick electrodes",
+    "presenter": "선세호 (Seho Sun)",
+    "affiliation": "영남대학교 화학공학부 · CAMP Lab",
+    "event": "2026 한국전기화학회 추계학술대회 · 2026. 11. · 구두발표",
+    "lang": "ko",
+    "theme": "navy",
+    "footer": "camp.seho.prof"
+  },
+  "sections": [
+    {
+      "id": "Ⅰ",
+      "label": "서론: 후막 건식 전극과 소립 문제"
+    },
+    {
+      "id": "Ⅱ",
+      "label": "계산: granule 크기 처방(DEM)"
+    },
+    {
+      "id": "Ⅲ",
+      "label": "합성과 물성: BCC 공바인더"
+    },
+    {
+      "id": "Ⅳ",
+      "label": "설계 논리와 대조군"
+    }
+  ],
+  "forbidden": [
+    "re-routing",
+    "세계 최초",
+    "23.6 %"
+  ],
+  "slides": [
+    {
+      "type": "title"
+    },
+    {
+      "type": "toc",
+      "bottom_line": "네 절로 나누어 계산 처방에서 실측 물성까지 순서대로 보고함"
+    },
+    {
+      "type": "intro",
+      "title": "발표자·연구실 소개: CAMP Lab",
+      "layout": "figure-left",
+      "bottom_line": "건식 후막 전극의 입도 분포를 공정이 아니라 바인더 화학으로 다루는 것이 본 연구의 출발점임",
+      "assets": [
+        {
+          "path": "../../../conf-talk-workspace/research/figures/F02_Fig1a_granulation_scheme_3D.png",
+          "caption": "granulation scheme — 소립이 대립 표면에 결합된 상태"
+        }
+      ],
+      "bullets": [
+        "건식 전극 공정과 계산화학을 함께 다루는 연구실",
+        "DEM · DFT · MLIP을 실험 설계 단계에서 사용",
+        "본 발표는 DEM 처방과 합성 검증을 잇는 사례",
+        "본 연구는 세계 최초로 소립 선택 결합을 구현함"
+      ],
+      "notes": "안녕하십니까. 영남대학교 CAMP Lab 선세호입니다. 오늘은 건식 후막 전극에서 소립이 만드는 응력 집중 문제를, 공정 조건이 아니라 바인더 화학으로 다룬 결과를 말씀드리겠습니다."
+    },
+    {
+      "type": "section",
+      "section": "Ⅰ"
+    },
+    {
+      "type": "content",
+      "section": "Ⅰ",
+      "title": "Ⅰ-1. 소립과 대립이 하중을 나누어 받는 방식",
+      "layout": "auto",
+      "bottom_line": "입자별 접촉력 분포에서 대립 상위 1 %가 전체 하중의 절반 이상을 받는 것이 관찰됨 (23.6 % 감소)",
+      "assets": [
+        {
+          "path": "../../../conf-talk-workspace/research/figures/F05_SN1_perparticle_force3D_matched.png",
+          "caption": "SN1 — per-particle contact force, matched color scale"
+        }
+      ],
+      "bullets": [
+        "대립에 하중이 몰리면 국부 균열의 시작점이 됨",
+        "소립이 분산되어 있으면 하중 전달 경로가 끊김"
+      ],
+      "notes": "먼저 문제 정의입니다. 입자별 접촉력을 같은 색 스케일로 맞추어 보면, 대립 소수가 전체 하중의 절반 이상을 받습니다. 이 편중이 국부 균열의 출발점입니다."
+    },
+    {
+      "type": "content",
+      "section": "Ⅰ",
+      "title": "Ⅰ-2. 문제 정의: 분산된 소립은 하중 전달에 기여하지 못함",
+      "layout": "figure-left",
+      "bottom_line": "소립을 대립 표면으로 모아 granule을 만들면 접촉 개수가 늘어 하중이 재분배됨",
+      "assets": [
+        {
+          "path": "../../../conf-talk-workspace/research/figures/F02_Fig1a_granulation_scheme_3D.png",
+          "caption": "Fig. 1a — granulation 개념도"
+        }
+      ],
+      "bullets": [
+        "Dispersed 상태에서는 소립이 빈 공간을 채울 뿐임",
+        "Granulated 상태에서는 소립이 접촉점을 추가함",
+        "접촉 개수 증가가 대립 최대 접촉력을 낮추는 경로임"
+      ],
+      "callout": {
+        "kind": "warn",
+        "text": "여기서 낮아지는 것은 시뮬레이션 상의 접촉력이며 실제 균열 감소를 측정한 값이 아님"
+      },
+      "notes": "그래서 소립을 대립 표면에 붙여 granule을 만들면, 접촉 개수가 늘어 대립이 받던 하중이 나뉩니다. 다만 이것은 시뮬레이션 상의 접촉력이라는 점을 분명히 하겠습니다."
+    },
+    {
+      "type": "section",
+      "section": "Ⅱ"
+    },
+    {
+      "type": "content",
+      "section": "Ⅱ",
+      "title": "Ⅱ-1. tortuosity 기하 모델로 본 granule 크기의 상한",
+      "layout": "figure-right",
+      "bottom_line": "granule이 대립 지름을 넘어서면 굴곡도가 다시 증가해 이온 경로가 길어짐",
+      "assets": [
+        {
+          "path": "../../../conf-talk-workspace/research/figures/F31_SI_tortuosity_geometric_model.png",
+          "caption": "SI — 기하학적 굴곡도 모델"
+        }
+      ],
+      "bullets": [
+        "granule 크기의 하한은 접촉 개수가 정함",
+        "상한은 굴곡도 증가가 정함",
+        "두 제약이 겹치는 구간이 설계 창임"
+      ],
+      "notes": "granule 크기에는 하한과 상한이 모두 있습니다. 하한은 접촉 개수, 상한은 굴곡도입니다. 두 제약이 겹치는 좁은 구간이 우리가 노릴 설계 창입니다."
+    },
+    {
+      "type": "content",
+      "section": "Ⅱ",
+      "title": "Ⅱ-2. BCC 공바인더의 합성 경로",
+      "layout": "figure-full",
+      "bottom_line": "β-CD 골격에 카복실기를 도입해 소립 표면에만 선택적으로 결합하도록 설계함",
+      "assets": [
+        {
+          "path": "../../../conf-talk-workspace/research/figures/F10_Fig2c_BCC_synthesis_scheme.png",
+          "caption": "Fig. 2c — BCC 합성 경로와 작용기 배치"
+        }
+      ],
+      "notes": "공바인더는 β-사이클로덱스트린 골격에 카복실기를 도입해 만들었습니다. 작용기 배치가 소립 표면 선택성을 결정합니다."
+    },
+    {
+      "type": "content",
+      "section": "Ⅱ",
+      "title": "Ⅱ-3. 기하 모델과 접촉각 측정의 대비",
+      "layout": "two-up",
+      "bottom_line": "모델이 예측한 굴곡도 감소 방향과 접촉각 감소 방향이 서로 어긋나지 않음",
+      "assets": [
+        {
+          "path": "../../../conf-talk-workspace/research/figures/F31_SI_tortuosity_geometric_model.png",
+          "caption": "(a) 기하 굴곡도 모델"
+        },
+        {
+          "path": "../../../conf-talk-workspace/research/figures/F22_SI_contact_angle.png",
+          "caption": "(b) 전해액 접촉각"
+        }
+      ],
+      "notes": "왼쪽은 계산으로 얻은 굴곡도, 오른쪽은 실측 접촉각입니다. 두 결과가 같은 방향을 가리킵니다."
+    },
+    {
+      "type": "section",
+      "section": "Ⅲ"
+    },
+    {
+      "type": "content",
+      "section": "Ⅲ",
+      "title": "Ⅲ-1. 접촉력 지도를 세 구간으로 나누어 본 결과",
+      "layout": "three-up",
+      "bottom_line": "세 구간 모두에서 대립 주변의 고하중 접촉이 granule 도입 후 옅어짐",
+      "assets": [
+        {
+          "path": "../../../conf-talk-workspace/research/figures/F05_SN1_perparticle_force3D_matched.png",
+          "caption": "(a) 좌측 구간",
+          "crop": [
+            0,
+            0,
+            2102,
+            1773
+          ]
+        },
+        {
+          "path": "../../../conf-talk-workspace/research/figures/F05_SN1_perparticle_force3D_matched.png",
+          "caption": "(b) 중앙 구간",
+          "crop": [
+            2102,
+            0,
+            4204,
+            1773
+          ]
+        },
+        {
+          "path": "../../../conf-talk-workspace/research/figures/F05_SN1_perparticle_force3D_matched.png",
+          "caption": "(c) 우측 구간",
+          "crop": [
+            4204,
+            0,
+            6307,
+            1773
+          ]
+        }
+      ],
+      "notes": "같은 그림을 세 구간으로 잘라 비교하면, 어느 구간에서도 고하중 접촉이 옅어지는 경향이 같습니다."
+    },
+    {
+      "type": "content",
+      "section": "Ⅲ",
+      "title": "Ⅲ-2. 이온 수송과 젖음성 수치",
+      "layout": "figure-table",
+      "bottom_line": "BCC 25 % 조건에서 이온 저항과 접촉각이 함께 낮아짐",
+      "assets": [
+        {
+          "path": "../../../conf-talk-workspace/research/figures/F22_SI_contact_angle.png",
+          "caption": "SI — 전해액 접촉각 측정"
+        }
+      ],
+      "table": {
+        "header": [
+          "BCC",
+          "R_ion (Ω)",
+          "τ",
+          "θ (°)"
+        ],
+        "rows": [
+          [
+            "0 %",
+            "27.62",
+            "1.26",
+            "95.96"
+          ],
+          [
+            "25 %",
+            "21.30",
+            "1.23",
+            "80.47"
+          ],
+          [
+            "50 %",
+            "24.85",
+            "1.31",
+            "83.11"
+          ]
+        ],
+        "highlight_row": 1
+      },
+      "notes": "표에서 25 % 조건이 이온 저항과 접촉각 모두에서 가장 낮습니다. 50 %에서는 다시 나빠집니다."
+    },
+    {
+      "type": "content",
+      "section": "Ⅲ",
+      "title": "Ⅲ-3. 접촉력 지도와 접촉각을 함께 본 정리",
+      "layout": "figure-stack",
+      "bottom_line": "하중 재분배와 젖음성 개선이 같은 조성 구간에서 함께 나타남",
+      "assets": [
+        {
+          "path": "../../../conf-talk-workspace/research/figures/F05_SN1_perparticle_force3D_matched.png",
+          "caption": "(상) 입자별 접촉력"
+        },
+        {
+          "path": "../../../conf-talk-workspace/research/figures/F22_SI_contact_angle.png",
+          "caption": "(하) 접촉각",
+          "min_text_px": 22
+        }
+      ],
+      "bullets": [
+        "두 측정이 같은 조성 구간을 가리킴",
+        "조성이 더 늘면 두 지표가 함께 나빠짐",
+        "따라서 최적 조성은 중간 구간에 존재함"
+      ],
+      "notes": "위아래 두 결과를 겹쳐 보면 최적 조성 구간이 하나로 좁혀집니다."
+    },
+    {
+      "type": "content",
+      "section": "Ⅲ",
+      "title": "Ⅲ-4. 조성 설계에서 지킨 세 가지 원칙",
+      "layout": "text-only",
+      "bottom_line": "세 원칙을 모두 만족하는 조성만 후보로 남겼음",
+      "bullets": [
+        "전해액에 녹지 않을 것",
+        "작동 전위 창 안에서 산화되지 않을 것",
+        "소립 표면에만 선택적으로 결합할 것",
+        "기존 건식 공정 온도에서 견딜 것"
+      ],
+      "callout": {
+        "kind": "key",
+        "text": "네 조건을 동시에 만족하는 골격으로 β-사이클로덱스트린을 선택함"
+      },
+      "notes": "조성 설계에서 지킨 원칙은 네 가지입니다. 이 네 가지를 동시에 만족하는 골격이 사이클로덱스트린이었습니다."
+    },
+    {
+      "type": "section",
+      "section": "Ⅳ"
+    },
+    {
+      "type": "content",
+      "section": "Ⅳ",
+      "title": "Ⅳ-1. 연구 흐름: 처방에서 검증까지",
+      "bottom_line": "계산이 먼저 granule 크기를 처방하고 합성과 측정이 그 처방을 검증하는 순서로 진행함",
+      "diagram": {
+        "kind": "flow",
+        "steps": [
+          {
+            "label": "DEM 처방",
+            "sub": "granule 크기 창"
+          },
+          {
+            "label": "분자 설계",
+            "sub": "β-CD 골격 선택"
+          },
+          {
+            "label": "합성·도포",
+            "sub": "건식 후막 전극"
+          },
+          {
+            "label": "물성 검증",
+            "sub": "저항·접촉각·강도"
+          }
+        ]
+      },
+      "bullets": [
+        "계산이 실험 조건을 좁히는 역할을 맡음",
+        "각 단계에서 다음 단계의 판정 기준을 미리 정함",
+        "검증이 실패하면 처방 단계로 돌아감"
+      ],
+      "notes": "전체 흐름입니다. 계산이 먼저 granule 크기 창을 처방하고, 그 창에 맞추어 분자를 설계했습니다."
+    },
+    {
+      "type": "content",
+      "section": "Ⅳ",
+      "title": "Ⅳ-2. 설계 변수의 적정 구간",
+      "bottom_line": "granule 대 대립 지름 비가 0.6에서 1.0 사이일 때 접촉 개수와 굴곡도가 함께 만족됨",
+      "diagram": {
+        "kind": "axis",
+        "min": "0",
+        "max": "2.0",
+        "ticks": [
+          "0",
+          "0.6",
+          "1.0",
+          "2.0"
+        ],
+        "zones": [
+          {
+            "from": 0,
+            "to": 0.3,
+            "label": "너무 작음 · 접촉 부족"
+          },
+          {
+            "from": 0.3,
+            "to": 0.5,
+            "label": "적정 구간",
+            "accent": true
+          },
+          {
+            "from": 0.5,
+            "to": 1,
+            "label": "너무 큼 · 굴곡도 증가"
+          }
+        ],
+        "caption": "설계 변수: D_agg / D_L"
+      },
+      "bullets": [
+        "왼쪽 끝에서는 접촉 개수가 부족함",
+        "오른쪽 끝에서는 이온 경로가 길어짐",
+        "가운데 구간만 두 제약을 함께 만족함"
+      ],
+      "notes": "설계 변수는 granule 지름을 대립 지름으로 나눈 값입니다. 가운데 구간만 두 제약을 함께 만족합니다."
+    },
+    {
+      "type": "content",
+      "section": "Ⅳ",
+      "title": "Ⅳ-3. 공바인더가 만족해야 할 요건",
+      "bottom_line": "네 요건을 모두 만족해야 기존 건식 공정을 바꾸지 않고 투입할 수 있음",
+      "diagram": {
+        "kind": "cards",
+        "items": [
+          {
+            "title": "불용성",
+            "body": "카보네이트 전해액에 녹지 않을 것"
+          },
+          {
+            "title": "전기화학 안정",
+            "body": "4.3 V 이하에서 산화 흔적이 없을 것"
+          },
+          {
+            "title": "선택 결합",
+            "body": "소립 표면에만 흡착할 것"
+          },
+          {
+            "title": "공정 적합",
+            "body": "기존 건식 혼합 온도에서 분해되지 않을 것"
+          }
+        ]
+      },
+      "notes": "요건은 네 가지입니다. 이 가운데 하나라도 어긋나면 기존 공정을 바꾸어야 하므로 후보에서 제외했습니다."
+    },
+    {
+      "type": "content",
+      "section": "Ⅳ",
+      "title": "Ⅳ-4. 대조군과의 비교",
+      "bottom_line": "PTFE 단독 대비 BCC 병용에서 이온 저항과 박리 강도가 함께 개선됨",
+      "diagram": {
+        "kind": "compare",
+        "left": {
+          "title": "PTFE 단독",
+          "lines": [
+            "소립이 분산 상태로 남음",
+            "이온 저항 27.62 Ω",
+            "박리 강도 기준값"
+          ]
+        },
+        "right": {
+          "title": "PTFE + BCC 25 %",
+          "lines": [
+            "소립이 대립 표면에 결합",
+            "이온 저항 21.30 Ω",
+            "박리 강도 개선"
+          ]
+        }
+      },
+      "notes": "대조군은 PTFE 단독 조건입니다. 같은 공정에서 BCC만 추가했을 때의 차이를 보시면 됩니다."
+    },
+    {
+      "type": "conclusion",
+      "title": "결론 및 향후 과제",
+      "items": [
+        "(1) 소립을 대립 표면에 결합시키면 대립의 시뮬레이션 접촉력이 낮아짐",
+        "(2) β-사이클로덱스트린 공바인더가 소립 표면에 선택적으로 결합함",
+        "(3) BCC 25 % 조건에서 이온 저항과 접촉각이 함께 낮아짐"
+      ],
+      "future": "granule 크기 실측 · PTFE add-on 대조군 확대 · 장기 사이클 후 단면 관찰",
+      "bottom_line": "계산 처방과 실측 물성이 같은 조성 구간을 가리킨다는 점이 이 연구의 핵심임",
+      "notes": "정리하겠습니다. 세 가지 결론과 세 가지 후속 과제가 있습니다."
+    },
+    {
+      "type": "thanks",
+      "lines": [
+        "감사합니다 · Q&A",
+        "공동연구자: 오원진, 최지훈",
+        "지원: 한국연구재단 · 영남대학교 CAMP Lab",
+        "camp.seho.prof"
+      ]
+    },
+    {
+      "type": "appendix",
+      "title": "Appendix A. BCC 합성 경로 상세",
+      "layout": "figure-left",
+      "bottom_line": "카복실화 단계의 반응 시간이 치환도를 결정함",
+      "assets": [
+        {
+          "path": "../../../conf-talk-workspace/research/figures/F10_Fig2c_BCC_synthesis_scheme.png",
+          "caption": "Fig. 2c — 합성 경로 (재게재)"
+        }
+      ],
+      "bullets": [
+        "1단계에서 골격의 1차 수산기만 활성화됨",
+        "2단계 반응 시간이 치환도를 결정함",
+        "정제 후 잔류 용매를 진공 건조로 제거함"
+      ],
+      "notes": "질문이 나올 수 있어 합성 경로를 부록에 넣었습니다."
+    },
+    {
+      "type": "appendix",
+      "title": "Appendix B. 굴곡도 모델 확대 (저해상 원본)",
+      "layout": "figure-full",
+      "bottom_line": "확대한 영역의 원본 해상도가 낮아 슬라이드에서 흐리게 보임",
+      "assets": [
+        {
+          "path": "../../../conf-talk-workspace/research/figures/F31_SI_tortuosity_geometric_model.png",
+          "caption": "SI — 굴곡도 모델 좌상단 확대",
+          "crop": [
+            0,
+            0,
+            544,
+            392
+          ],
+          "min_text_px": 14
+        }
+      ],
+      "notes": "부록 B는 굴곡도 모델의 좌상단을 확대한 것입니다. 원본 해상도 한계로 흐립니다."
+    }
+  ]
+}

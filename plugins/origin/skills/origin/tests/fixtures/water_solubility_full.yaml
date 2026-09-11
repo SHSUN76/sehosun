@@ -1,0 +1,23 @@
+output: water_solubility_full
+style: house
+graphs:
+  - id: solubility
+    donor: bar_labeled
+    data: tests/fixtures/water_solubility_greek.csv
+    x: cyclodextrin
+    y: solubility
+    y_title: "g / 100 mL"
+    y_range: auto
+
+    title: "Water solubility (25 °C)"
+
+    colors:
+      base: "#808080"
+      highlight:
+        category: "β-CD"
+        color: "#B22222"
+
+    annotation:
+      text: "lowest → asset\nonce crosslinked"
+      at: "β-CD"
+      color: "#B22222"

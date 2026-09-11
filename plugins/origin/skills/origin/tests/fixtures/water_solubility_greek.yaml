@@ -1,0 +1,10 @@
+output: water_solubility_greek
+style: house
+graphs:
+  - id: solubility
+    donor: bar_labeled
+    data: tests/fixtures/water_solubility_greek.csv
+    x: cyclodextrin
+    y: solubility
+    y_title: "g / 100 mL"
+    y_range: auto

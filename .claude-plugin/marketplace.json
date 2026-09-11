@@ -172,6 +172,72 @@
       "homepage": "https://github.com/SHSUN76/llmwiki",
       "repository": "https://github.com/SHSUN76/llmwiki",
       "license": "MIT"
+    },
+    {
+      "name": "camp-talk",
+      "source": "./plugins/camp-talk",
+      "displayName": "CAMP Talk (conference deck builder)",
+      "description": "Turns a manuscript or research folder into a conference talk deck through a three-stage pipeline: an asset ledger that measures every figure first, a deterministic fixed-grid pptxgenjs builder, and an automated QA pass. The model never places coordinates, so title, band and takeaway line sit in the same place on every slide and figures keep their native aspect ratio.",
+      "author": {
+        "name": "Seho Sun",
+        "email": "camplab2@gmail.com",
+        "url": "https://github.com/SHSUN76"
+      },
+      "homepage": "https://github.com/SHSUN76/sehosun",
+      "repository": "https://github.com/SHSUN76/sehosun",
+      "license": "MIT",
+      "category": "research",
+      "keywords": [
+        "presentation",
+        "pptx",
+        "conference-talk",
+        "academic",
+        "slides"
+      ]
+    },
+    {
+      "name": "origin",
+      "source": "./plugins/origin",
+      "displayName": "Origin Figure Automation",
+      "description": "Builds publication-grade OriginLab graphs from tidy csv/xlsx data and embeds them into PowerPoint as editable OLE objects. Style is inherited from ten donor .opj archetypes recovered from published decks, with a house style (32 pt axis titles, 24 pt bold tick labels, axis thickness 4) enforced on top. Requires a local Origin 2021 installation and originpro.",
+      "author": {
+        "name": "Seho Sun",
+        "email": "camplab2@gmail.com",
+        "url": "https://github.com/SHSUN76"
+      },
+      "homepage": "https://github.com/SHSUN76/sehosun",
+      "repository": "https://github.com/SHSUN76/sehosun",
+      "license": "MIT",
+      "category": "research",
+      "keywords": [
+        "originlab",
+        "originpro",
+        "figure",
+        "plotting",
+        "powerpoint"
+      ]
+    },
+    {
+      "name": "ppt-image",
+      "source": "./plugins/ppt-image",
+      "displayName": "PPT Image Generator",
+      "description": "Generates 4K slide images, diagrams and dense infographics from a markdown slide draft using Gemini (Nano Banana) or OpenAI image models. Includes document-context prompt enrichment, per-slide aspect-ratio batching, Tavily reference-image search and exponential-backoff retries.",
+      "author": {
+        "name": "Seho Sun",
+        "email": "camplab2@gmail.com",
+        "url": "https://github.com/SHSUN76"
+      },
+      "homepage": "https://github.com/SHSUN76/sehosun",
+      "repository": "https://github.com/SHSUN76/sehosun",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "image-generation",
+        "slides",
+        "gemini",
+        "infographic",
+        "diagram"
+      ]
     }
   ]
 }

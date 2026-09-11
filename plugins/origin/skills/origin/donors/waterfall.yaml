@@ -1,0 +1,32 @@
+archetype: waterfall
+curated_from: oleObject3.bin
+graph: Graph3
+graph_count: 1
+measured:
+  layer.x.thickness: 4.0
+  layer.y.thickness: 4.0
+  layer.x.label.pt: 24.0
+  layer.y.label.pt: 18.0
+  layer.x.label.bold: 0.0
+  layer.y.label.bold: 0.0
+  XB.fsize: 32.0
+  YL.fsize: 32.0
+  YR.fsize: 22.0
+  layer.x.ticks: 5.0
+  layer.y.ticks: 0.0
+  layer.x.type: 1.0
+  layer.y.type: 1.0
+  layer.x.from: 4000.0
+  layer.x.to: 600.0
+  layer.x.inc: -500.0
+  layer.y.from: 0.0
+  layer.y.to: 200.0
+  layer.y.inc: 20.0
+  page.nLayers: 1.0
+  page.width: 6432.0
+  page.height: 4923.0
+data_shape:
+  rows: 3401
+  cols: 8
+  x_type: numeric
+  has_worksheet: true

@@ -1,0 +1,5 @@
+# camp-talk python tools: asset_ledger.py, deck_qa.py, render_deck.py
+python-pptx>=0.6.23
+pillow>=10.0
+pymupdf>=1.24
+numpy>=1.26
