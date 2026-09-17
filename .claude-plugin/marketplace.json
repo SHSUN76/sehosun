@@ -238,6 +238,34 @@
         "infographic",
         "diagram"
       ]
+    },
+    {
+      "name": "research-radar",
+      "source": {
+        "source": "github",
+        "repo": "SHSUN76/research-radar"
+      },
+      "displayName": "Research Radar (gap-to-calculation loop)",
+      "description": "PRIVATE REPO (CAMP Lab members only). 실험 연구자의 분야에서 '이유를 모르는' 자리를 찾아 계산화학 가상실험으로 메우는 연구 레이더. radar-init 이 의도·분야·실험 관찰 씨앗·관심 관측량·자원·문헌 접근·운영 정책을 7단계로 물어 프로필과 하니스 프로젝트를 만들고, 문헌 gap 조사(OA 수집→2단 추출→큐레이션→PI 선택 페이지)·논문 상세 리뷰·실험 관찰 접수·계산 설계·하니스 사이클 운용·PI 페이지 규약을 스킬 8종으로 제공한다. 연구자에게는 관심·우선순위·방향만 묻고 계산 판단은 Advisor 가 맡는다(한국어).",
+      "author": {
+        "name": "Seho Sun",
+        "email": "camplab2@gmail.com",
+        "url": "https://github.com/SHSUN76"
+      },
+      "homepage": "https://github.com/SHSUN76/research-radar",
+      "repository": "https://github.com/SHSUN76/research-radar",
+      "license": "MIT",
+      "category": "research",
+      "keywords": [
+        "research-radar",
+        "literature-gap",
+        "virtual-experiment",
+        "dft",
+        "computational-chemistry",
+        "battery",
+        "cmp",
+        "korean"
+      ]
     }
   ]
 }
