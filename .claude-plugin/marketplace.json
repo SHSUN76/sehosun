@@ -174,6 +174,31 @@
       "license": "MIT"
     },
     {
+      "name": "zettel",
+      "source": {
+        "source": "github",
+        "repo": "SHSUN76/zettel"
+      },
+      "displayName": "zettel (personal Zettelkasten)",
+      "description": "개인 제텔카스텐: 원자료(_raw)·임시노트·문헌노트를 루만 번호가 붙은 영구노트로 승격하는 플러그인. 판단은 LLM이, 게이트(자기 말로 재작성·태그·링크 2개)와 루만 번호는 스크립트가. 세 노트 유형의 YAML 정본과 본문 정규화기(detect_style / normalize_permanent_body)를 함께 담아 옛 노트를 손실 없이 정본 서식으로 옮긴다. 수업용 llmwiki 에서 분기한 1인용 판(한국어).",
+      "author": {
+        "name": "Seho Sun",
+        "email": "camplab2@gmail.com",
+        "url": "https://github.com/SHSUN76"
+      },
+      "homepage": "https://github.com/SHSUN76/zettel",
+      "repository": "https://github.com/SHSUN76/zettel",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "zettelkasten",
+        "obsidian",
+        "zettel",
+        "note-taking",
+        "korean"
+      ]
+    },
+    {
       "name": "camp-talk",
       "source": "./plugins/camp-talk",
       "displayName": "CAMP Talk (conference deck builder)",
