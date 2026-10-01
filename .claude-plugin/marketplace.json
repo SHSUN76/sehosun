@@ -291,6 +291,34 @@
         "cmp",
         "korean"
       ]
+    },
+    {
+      "name": "patent-autopilot",
+      "source": {
+        "source": "github",
+        "repo": "SHSUN76/patent-autopilot"
+      },
+      "displayName": "Patent Autopilot (invention mining to URP disclosure)",
+      "description": "PRIVATE REPO (CAMP Lab members only). 특허 작업 폴더를 파일로 판정해 발명 발굴(실험 데이터·원고·아이디어 → 후보, 선행 검토 3축) → 청구항 사다리(넓은 안 대 좁은 안, 선행 대조표) → 명세서 작성·감사·변리사 패키지 → 대학 URP 발명신고 입력 시트 준비를 결정 게이트 G0~G5와 함께 이어 주는 두뇌 스킬과 하위 스킬 5종. 변리사 송부·URP 저장·신고·출원 결정은 사람이 한다(한국어).",
+      "author": {
+        "name": "Seho Sun",
+        "email": "camplab2@gmail.com",
+        "url": "https://github.com/SHSUN76"
+      },
+      "homepage": "https://github.com/SHSUN76/patent-autopilot",
+      "repository": "https://github.com/SHSUN76/patent-autopilot",
+      "license": "MIT",
+      "category": "research",
+      "keywords": [
+        "patent",
+        "특허",
+        "claims",
+        "patent-specification",
+        "invention-disclosure",
+        "prior-art",
+        "urp",
+        "korean"
+      ]
     }
   ]
 }

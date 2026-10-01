@@ -33,6 +33,7 @@ For example, `/plugin install tailscale-ssh@sehosun`.
 | `paper-autopilot` | Multi-corpus (MoE) academic paper pipeline: scaffold, forcing-question gates, experimental SOP design, figure mockup evolution, corpus-routed drafting, adversarial spec review. | Private |
 | `paper-autopilot-open` | Public standalone edition of the paper pipeline, with guided onboarding and dual local/Supabase RAG. Ships disabled by default. | Public |
 | `tailscale-ssh` | Establish SSH between two machines with no VPN, no port forwarding, and no inbound firewall rule, over a Tailscale WireGuard tunnel. | Public |
+| `patent-autopilot` | Patent pipeline for Korean filings: invention mining from lab data (three-axis prior-art screen), claim breadth ladder with a prior-art matrix, specification drafting and audit, attorney package, and university invention-disclosure (URP) input sheets, gated by human decision points. | Private |
 
 Plugins marked **Private** live in private repositories and resolve only for GitHub
 accounts that have read access to them — in practice, CAMP Lab members. Everyone else
